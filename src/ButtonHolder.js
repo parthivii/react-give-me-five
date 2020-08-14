@@ -26,10 +26,10 @@ class ButtonHolder extends React.Component {
   render() {
     const refresh = this.state.refresh;
     return (
-      <div>
+      <>
         {!refresh ? this.createButtons() : null}
         {refresh ? this.createButtons() : null}
-      </div>
+      </>
     );
   }
 }

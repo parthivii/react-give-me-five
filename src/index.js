@@ -17,17 +17,16 @@ class App extends React.Component {
       count: 0,
     };
   }
-  updateInput(key, value) {
-    // update react state
-    this.setState({ [key]: value });
-  }
+
   updateValue = (letter) => {
+    // update the word
     this.setState({
       value: this.state.value + letter,
     });
   };
+
   addItem = () => {
-    // create a new item with unique id
+    // include new item
 
     const newItem = {
       value: this.state.value,
@@ -39,9 +38,6 @@ class App extends React.Component {
     // add the new item to the list
 
     list.push(newItem);
-    this.setState({
-      count: this.state.count + 1,
-    });
 
     // update state with new list, reset the new item input
 
@@ -51,10 +47,11 @@ class App extends React.Component {
         newItem: "",
         value: "",
         refresh: !prevState.refresh,
+        count: this.state.count + 1,
       };
     });
   };
-
+  //clear the item input
   clearWord = () => {
     this.setState((prevState) => {
       return {
@@ -76,21 +73,22 @@ class App extends React.Component {
             refresh={this.state.refresh}
           />
 
-          <Input
-            value={this.state.value}
-            onChange={(e) => this.updateInput("newItem", e.target.value)}
-          />
-          <Button
-            className="btn"
-            variant="warning"
-            onClick={() => this.addItem()}
-            disabled={!this.state.value.length || this.state.count === 5}
-          >
-            Add
-          </Button>
-          <Button className="btn" variant="warning" onClick={this.clearWord}>
-            Clear
-          </Button>
+          <div>
+            <Input value={this.state.value} />
+
+            <Button
+              className="btn"
+              variant="warning"
+              onClick={() => this.addItem()}
+              disabled={!this.state.value.length || this.state.count === 5}
+            >
+              Add
+            </Button>
+
+            <Button className="btn" variant="warning" onClick={this.clearWord}>
+              Clear
+            </Button>
+          </div>
         </Card.Body>
         <Card.Body>
           <Table>
@@ -98,9 +96,9 @@ class App extends React.Component {
               {this.state.list.map((item) => {
                 return (
                   <tr>
-                    <td class="value">{item.value}</td>
+                    <td className="value">{item.value}</td>
                     <td>
-                      <Badge variant="danger" ckassname="badge">
+                      <Badge variant="danger" className="badge">
                         {item.value.length}
                       </Badge>
                     </td>
