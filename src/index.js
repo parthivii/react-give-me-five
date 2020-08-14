@@ -43,7 +43,7 @@ class App extends React.Component {
       count: this.state.count + 1,
     });
 
-    // update state with new list, reset the new item inputhello
+    // update state with new list, reset the new item input
 
     this.setState((prevState) => {
       return {
