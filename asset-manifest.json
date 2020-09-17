@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-give-me-five/static/css/main.0bae40d2.chunk.css",
+    "main.js": "/react-give-me-five/static/js/main.048aa598.chunk.js",
+    "main.js.map": "/react-give-me-five/static/js/main.048aa598.chunk.js.map",
+    "runtime-main.js": "/react-give-me-five/static/js/runtime-main.b72b8908.js",
+    "runtime-main.js.map": "/react-give-me-five/static/js/runtime-main.b72b8908.js.map",
+    "static/css/2.11829350.chunk.css": "/react-give-me-five/static/css/2.11829350.chunk.css",
+    "static/js/2.2d9c1276.chunk.js": "/react-give-me-five/static/js/2.2d9c1276.chunk.js",
+    "static/js/2.2d9c1276.chunk.js.map": "/react-give-me-five/static/js/2.2d9c1276.chunk.js.map",
+    "index.html": "/react-give-me-five/index.html",
+    "precache-manifest.0f9c4d4cc1ac9107f3ae80595fcb57a9.js": "/react-give-me-five/precache-manifest.0f9c4d4cc1ac9107f3ae80595fcb57a9.js",
+    "service-worker.js": "/react-give-me-five/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/react-give-me-five/static/css/2.11829350.chunk.css.map",
+    "static/css/main.0bae40d2.chunk.css.map": "/react-give-me-five/static/css/main.0bae40d2.chunk.css.map",
+    "static/js/2.2d9c1276.chunk.js.LICENSE.txt": "/react-give-me-five/static/js/2.2d9c1276.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b72b8908.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.2d9c1276.chunk.js",
+    "static/css/main.0bae40d2.chunk.css",
+    "static/js/main.048aa598.chunk.js"
+  ]
+}
